@@ -1,108 +1,53 @@
-/*object method
+/*
+var a;
+var b;
+var c =prompt("Enter the value");
 
-var person={
-    firstname: 'john',
-    lastname:   'Andrew'
+function calculator( a,b){
+    if(c=="+"){
 
-};
-
-person.greet= function(){
-    console.log('hello')
-
-}
-person.greet()
-
-------------------------------------------------
-
-var person={
-
-    firstname: 'John',
-    lastname: 'andrew'
-};
-
-function greet(){
-
-    console.log('hello world')
-
-}
-
-person.greet=greet;
-person.greet() 
-
---------------------------------------
-
-var person={
-
-    firstname: 'John',
-    lastname: 'Andrew',
-    greet:function(){
-
-
-        console.log('hello world')
+        document.write (a+b,"<br>");
     }
-};
-person.greet()
------------------------------------------------------------
-var person={
-
-    firstname: 'John',
-    lastname: 'Andrew',
-    greet(){
-
-
-        console.log('hello world')
+    else if(c=="-"){
+        document.write (a-b, "<br>");
     }
-};
-person.greet() 
 
-------------------------------------------------------------------
-let person ={
-
-    firstname: 'John',
-    lastname: 'Andrew',
-    greet: function(){
-
-        console.log('hello world')
-
-    },
-    getfullname:function(){
-
-        return this.firstname+' '+this.lastname;
+    else if(c=="*"){
+        document.write (a*b, "<br>");
+    
     }
-};
 
-console.log(person.getfullname()) 
+    else if(c=="/"){
 
+        document.write (a/b ,"<br>");
+    }
 
-------------------------------------------------------------------
+    else if(c=="%"){
+        document.write (a%b, "<br>");
+    }
+    else{
 
+        document.write("not valid")
 
-function People(firstname,lastname){
+    } 
 
-    this.firstname=firstname
-    this.lastname=lastname
 
 }
 
-let people =new People('John','Andrew')
+calculator(6,8)
+calculator(9,3)
+*/
 
-console.log(people.firstname)  
-----------------------------------------------------------------
+var a=parseInt(prompt("Enter the number"))
 
-const person={
+    if(a%2==0 && a>0){
 
-    firstname: 'John',
-    lastname: 'Andrew',
-    Age: 35
-
-};
-
-for(const key in person){
-    if(person.hasOwnProperty(key)){
-
-        const value = person[key];
-
-        console.log(value)
+document.write("positive intiger");
 
     }
-}*/
+    else{
+        document.write( "the number is not postive");
+    }
+    
+
+
