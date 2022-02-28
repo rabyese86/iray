@@ -1,0 +1,49 @@
+
+.max-height{
+
+    min-height: 100vh;
+}
+
+body{
+
+    background-color: #f2fdff;
+}
+.img-container{
+
+    min-height: 60vh;
+    background:url('../image/contBcg-4.jpeg') center/cover fixed no-repeat;
+
+    position: relative;
+}
+
+@media screen and (min-width:768px) {
+
+.img-container{
+    
+    min-height:  80vh;
+}
+
+}
+.btn-left{
+
+position: absolute;
+top: 50%;
+left:0;
+background:#3e92cc;
+color: #f2fdff  !important;
+transform: translate(-50%, -50%);
+font-size: 1.2rem;
+
+}
+
+.btn-right{
+
+    position: absolute;
+    top: 50%;
+    right:0;
+    background:#3e92cc;
+    color: #f2fdff  !important;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    
+    }
