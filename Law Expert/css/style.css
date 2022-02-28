@@ -138,8 +138,9 @@ body{
 
    min-height: 60vh;
    background:url('../image/contBcg-4.jpeg') center/cover fixed no-repeat;
-
+   width: 100%;
    position: relative;
+  
 }
 
 @media screen and (min-width:768px) {
@@ -154,8 +155,8 @@ body{
 
 position: absolute;
 top: 50%;
-left:0;
-background:#3e92cc;
+left:5%;
+background:#b3b5b6;
 color: #f2fdff  !important;
 transform: translate(-50%, -50%);
 font-size: 1.2rem;
@@ -166,18 +167,82 @@ font-size: 1.2rem;
 
    position: absolute;
    top: 50%;
-   right:0;
-   background:#3e92cc;
+   right:5%;
+   background:#b3b5b6;
    color: #f2fdff  !important;
    transform: translate(-50%, -50%);
    font-size: 1.2rem;
    
    }
 
+   .midtext{
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 70vh;
+      
+
+   }
+.midtext h1{
+
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color: white;
+   font-size: 50px;
+   font-weight: bold;
+}
+
+.midtext p{
 
 
+   font-size: 20px;
+   color: #f2fdff;
+
+}
+
+.midtext a{
+
+   border:solid white 2px;
+   color: white;
+   padding: 10px 15px;
+   text-decoration: none;
+   font-size:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+   
+}
+.midtext a:hover{
+
+   background-color: black;
+   color: white;
+   border-color: black;
+
+}
+.bottom{
+   display: flex;
+   justify-content: space-around;
+   height: 30vh;
+   align-items: center;
+
+}
+
+.bot{
+
+   width: 20%;
+   text-align: center;
 
 
+}
+
+.bottom i{
 
 
- 
+   color: red;
+   font-size: 50px;
+
+
+}
+
+.bottom h3{
+
+   font-weight: bold;
+}
