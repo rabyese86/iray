@@ -357,3 +357,74 @@ margin-right: 50px;
 
 
 }
+.cform{
+
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   margin: 0 auto;
+
+
+}
+
+.cform input{
+
+
+   padding-left: 60px;
+   padding-right: 80px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   border-radius: 10px;
+   border: none;
+   border-bottom: 1px solid gray ;
+   margin-bottom: 10px;
+ 
+
+
+}
+
+.cform label{
+
+   text-transform: uppercase;
+   font-size: 20px;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color: rgb(180, 6, 6);
+
+
+}
+
+.cform textarea{
+
+
+   border: none;
+   border-bottom: 1px solid gray ;
+   padding: 100px;
+   padding-bottom: 100px;
+}
+
+.submit{
+
+   border: none;
+   background-color: rgb(231, 88, 21);
+   color: white;
+   font-size: 20px;
+   margin-top: 10px;
+   font-weight: bold;
+   text-transform: uppercase;
+
+
+}
+
+footer{
+
+   height: 5vh;
+   text-align: center;
+   font-size: 15px;
+   padding-top: 10px;
+   background-color:rgb(83, 81, 81);
+   color: white;
+   margin-top: 50px;
+
+
+
+}
