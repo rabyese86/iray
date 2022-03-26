@@ -1,0 +1,124 @@
+import React, {Component} from "react";
+
+
+class Days extends Component{
+    constructor(props){
+        super(props)
+        this.state={
+            count:0
+
+        }
+
+    }
+
+    increment(){
+        this.setState({
+            count:this.state.count +1 
+
+
+        },()=>{console.log("call back value",this.state.count)})
+
+    }
+
+    decrement(){
+
+        this.setState({
+            count:this.state.count -1
+
+
+        },()=>{console.log("call back value",this.state.count)})
+
+    }
+
+    render(){
+
+        return( 
+
+            <div> 
+                <div>
+            Count-{this.state.count}
+
+                </div>
+
+                <button onClick ={()=> this.increment()}> Increment </button>
+                <button onClick ={() => this.decrement()}> decrement</button>
+
+            </div>
+
+          )
+
+
+    }
+}
+
+
+export default Days
+
+------------------------------------------------------------
+
+import React from "react";
+
+const Weekend= props => {
+
+    const {name, heroname}= props
+
+    return(
+        <div>
+            <h1> Hello {name} a.k.a {heroname}  </h1>
+
+
+        </div>
+
+    )
+
+    
+
+}
+
+export default Weekend
+
+--------------------------------------------------------------
+
+import logo from './logo.svg';
+import './App.css';
+import Days from './component/Days';
+import Weekend from './component/Weekend';
+
+
+
+
+
+
+function App() {
+  return (
+    <div className="App">
+     
+
+     <Days/>
+     <Weekend name="Ray" heroname = "Jackson"/>
+
+
+
+
+
+    </div>
+  );
+}
+
+export default App;
+
+-------------------------------------------------------------
+
+
+button{
+
+  width: 300px;
+  color: black;
+  font-weight: bold ;
+  background-color: gray;
+  padding: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+
+
+}
