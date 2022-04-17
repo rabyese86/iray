@@ -1,0 +1,43 @@
+
+<h1> Welcome</h1>
+
+<button (click) = "getData('box')"> Click here </button> <br/>
+
+<input type="text" #box (keyup)= "getData(box.value)"  placeholder=" Eneter your name " > <br/>
+
+<input type="text" #box1 (keydown)= "getData(box1.value)"  placeholder=" Eneter your name " >
+
+<input type="text" #box2 (blur)= "getData(box2.value)"  placeholder=" Eneter your name " >
+
+<input type="text" #box2 (input)= "getData(box2.value)"  placeholder=" Eneter your name " >
+
+<h1 (mouseover)="getData('over')" > Code Step by Step </h1>
+
+<h1 (mouseleave)="getData('over')" > Rabbi </h1>
+
+<input type="text" name="user-name" value={{name}} disabled={{disable}}/>
+
+<input type="text" name="user-name" [value]= name [disabled]= disable >  
+
+
+<h1 *ngIf="show; then ifBlock else elseBlock"> Code </h1>
+<ng-template #ifBlock>
+  <h1>if condition</h1>
+</ng-template>
+
+<ng-template #elseBlock> <h1> Else condition</h1></ng-template>
+
+
+<h1> Welcome</h1>
+
+<h3 *ngFor= "let item of users">{{item}} </h3>
+
+<h2 *ngFor= "let item of cities">{{item}} </h2>
+
+<ul *ngFor= "let user of Users"> <li>{{user.name}} </li><li>{{user.phone}} </li>  </ul>
+
+<h1 style="color:green; "> {{title}} </h1>
+
+
+
+
