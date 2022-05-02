@@ -1,4 +1,6 @@
 import React, {useState,useEffect} from 'react'
+import Skeleton from 'react-loading-skeleton';
+
 
 
 
@@ -41,10 +43,43 @@ const Product = () => {
 
             return (
                 <>
-                Loading...........
+                <div className="col-3"> 
+
+                   <Skeleton height={350}/>
+                    </div>
+
+
+                      <div className="col-3"> 
+
+                   <Skeleton height={350}/>
+                    </div>
+
+
+                    <div className="col-3"> 
+
+                        <Skeleton height={350}/>
+                     </div>
+
+
+                   <div className="col-3"> 
+
+                     <Skeleton height={350}/>
+                    </div>
+
+
+
+                        <div className="col-3"> 
+
+                            <Skeleton height={350}/>
+                     </div>
+
                 </>
             )
 
+        }
+        const filterProduct = (cat) =>{
+            const updatedList = data.filter((x)=> x.category === cat);
+            setFilter(updatedList);
         }
 
 
@@ -52,11 +87,11 @@ const Product = () => {
             return(
                 <>
             <div className="buttons d-flex justify-content-center pd-5"  >
-                <button className="btn btn-outline-dark"> All </button>
-                <button className="btn btn-outline-dark"> Mens Clothing </button>
-                <button className="btn btn-outline-dark"> Womens Clothing </button>
-                <button className="btn btn-outline-dark"> Jewelries </button>
-                <button className="btn btn-outline-dark"> Electronics </button>
+                <button className="btn btn-outline-dark" onClick={()=> setFilter(data) }> All </button>
+                <button className="btn btn-outline-dark" onClick={()=> filterProduct("men's clothing") }> Mens Clothing </button>
+                <button className="btn btn-outline-dark"  onClick={()=> filterProduct("women's clothing") } > Womens Clothing </button>
+                <button className="btn btn-outline-dark"  onClick={()=> filterProduct("jewelery") }> Jewelries </button>
+                <button className="btn btn-outline-dark"  onClick={()=> filterProduct("electronics") }> Electronics </button>
 
 
             </div>
@@ -124,9 +159,7 @@ const Product = () => {
             } 
 
 
-
-
-        </div>
+ </div>
         </div>
 
     </div>
