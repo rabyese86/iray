@@ -1,0 +1,205 @@
+public static void main(String[] args) {
+    String greeting = "Hello World.";
+   System.out.println(greeting);
+   System.out.println("Musa Ajibade");
+   System.out.print("I live in Nigeria");
+   System.out.print("I love my country");
+   // Comments
+    //I'm discussing comments
+    /**
+     * hgvasbanklhkvjdasgcvb
+     * bb hubca sknja
+     *
+     * HCHJASB JSN
+     */
+    System.out.println("I'm of voting age");
+    System.out.print("Tested and trusted");
+
+    //Data types and variables
+    /**
+     * name - string
+     * age - integer
+     * complexion - string
+     * weight - double, float, big decimal
+     * height - double, float, big decimal
+     * address - string
+     * educational qualification - string
+     * gender - string, char
+     * boolean
+     */
+
+    String firstname;
+    firstname = "Musa";
+    String lastname;
+    lastname = "Muhammad";
+    int age;
+    age = 85;
+    String complexion;
+    complexion = "dark";
+    double weight;
+    weight = 25;
+    float height;
+    height = 1.90f;
+    String gender;
+    gender = "male";
+    //printing out the name of the Nigerian president
+    //concatenation
+
+    String fullname = firstname + " " + lastname;
+    System.out.println(fullname + " is " + age + " years old");
+    String message = firstname + " is currently the President of Nigeria. " + firstname + " had pnce been the head of state in 1979." + firstname + " was alos " +
+            "minister of petroleum at the time";
+    System.out.println(message);
+
+
+
+}
+
+-----------------------
+
+public static void main(String[] args) {
+       int sum = 100 + 50;
+        int difference = 100 - 50;
+        int mult = 100 * 50;
+        int division = 100/50;
+        int modulo = 4%2;
+        System.out.println(modulo);
+
+        int x = 4;
+        x = x+1;
+        x++;
+        int y = 5;
+        y--; // y-1
+        System.out.println(x);
+        System.out.println(y);
+
+        //Assignment operators '=' assignment
+        String name = "Nigeria";
+        int z = 8;
+
+        System.out.println(z+=5); // 13
+        System.out.println(z-=3); //10
+        System.out.println(z*=10); //100
+        System.out.println(z/=10);
+//
+        //comparison - boolean
+        int a = 3;
+        int b = 3;
+        System.out.println(a==b);
+        System.out.println(a>b);
+        System.out.println(a>=b);
+        System.out.println(a<=b);
+//
+        // Logical operators
+        int c = 10; int d = 10;
+        System.out.println(c > 5 && d < 7);
+        //AND - OPERATOR
+        System.out.println(true && false);
+        System.out.println(true && true);
+        System.out.println(false && false);
+        System.out.println(false && true);
+
+        //OR- OPERATOR
+        System.out.println(true || false);
+        System.out.println(false || true);
+        System.out.println(false || false);
+        System.out.println(true || true);
+
+
+
+
+
+    }
+------------------------------------------
+
+int a = 30; int b = 50; int c = 20; int maximum;
+//if - else statements
+maximum = Math.max(a, b);
+int result = Math.max(maximum, c);
+System.out.println(maximum);
+System.out.println(result);
+
+int minimum = Math.min(a, b);
+System.out.println(minimum);
+int secondResult = Math.min(minimum, c);
+System.out.println(secondResult);
+
+//sqrt
+double root = Math.sqrt(a);
+
+System.out.printf("%.2f\n", Math.floor(root));
+System.out.println(Math.sqrt(a));
+
+//absolute values
+int d = -50;
+System.out.println(Math.abs(d));
+
+//random
+double myage = 22.76;
+System.out.println((int) myage);
+int min = 100;
+int max = 999;
+
+//2009735224
+
+System.out.println("Random value in int from "+min+" to "+max+ ":");
+int random_int = (int)Math.floor(Math.random()*(max-min+1)+min);
+System.out.println(random_int);
+
+//boolean
+int votingAge = 18;
+int age = 14;
+System.out.println(age >= votingAge);
+
+//OOP - Object oriented programming and conditionals
+
+
+----------------------------------------------------------
+
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+//        int age;
+//        age = 89;
+//        double height;
+//        height = 8.9;
+//        char myGrade;
+//        myGrade = 'B';
+//
+//        System.out.println(myGrade);
+//        System.out.println(age);
+//        System.out.println(height);
+//
+//        // question 3
+//
+//        int ProductNumb;
+//        ProductNumb = 6;
+//        double product_Num;
+//        product_Num =8.2;
+//
+//        System.out.println(ProductNumb);
+//        System.out.println(product_Num);
+//        System.out.println(Math.pow(3,9));
+//
+        String message = " I love Berlin and i will love to live here forever";
+            message= message.replace ("Berlin", "Nigeria");
+            System.out.println(message);
+
+            message=message.replace(" " , "%");
+
+                    System.out.println(message.replaceAll("//message", "%") );
+                    
+
+    }
+}
+
+
+
+
+
+---------------------------------------------
+
+
+
+
